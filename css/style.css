@@ -1,0 +1,86 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+
+    width: 80%;
+    background-color: #333333;
+
+    color: white;
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+    .header_back{
+        background-color: #8C8C8C;
+        width: 100dvw;
+        height: 60px;
+
+        z-index: -999;
+        position: absolute;
+        left: 0;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 20px;
+
+        height: 60px;
+        background-color: #8C8C8C;
+
+        margin-bottom: 1em;
+    }
+
+    .searchs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin-bottom: 1em;
+    }
+    .searchs > div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        gap: 8px;
+    }
+        .searchs > div > input{
+            height: 30px;
+            border-radius: 6px;
+            background-color: #333333;
+            color:white;
+
+            width: 20dvw;
+
+            border: solid 2px white;
+        }
+        .searchs > div > button{
+            width: 30px;
+            height: 30px;
+
+            color: white;
+            font-size: 20px;
+            background-color: #333333;
+        }
+
+    .music_table{
+        width: 100%;
+        height: calc(100dvh - 116px - 1em - 20px);
+
+        border: solid 2px white;
+        border-radius: 6px;
+    }
+        .music_table > div{
+            display: flex;
+            flex-direction:  row;
+            justify-content: space-between;
+        }
+        .id{
+            margin-left: 12px;
+        }
+        .count_listener{
+            margin-right: 12px;
+        }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>MusicListener</title>
+</head>
+
+<body>
+    <div class="header_back"></div>
+    <header>
+        <p>MusicListener</p>
+        <p>Кількість пісень: <span id="music_count">0</span></p>
+    </header>
+
+    <div class="searchs">
+        <div>
+            <input 
+                id="search_by_name_input" 
+                class="search_by_name" 
+                placeholder="Пошук музики за назвою"
+            >
+                <button id="search_by_name_button" type="submit">↵</button>
+            </input>
+        </div>
+        <div>
+            <input 
+                id="search_by_genre_input" 
+                class="search_by_genre" 
+                placeholder="Пошук музики за жанром"
+            >
+                    <button id="search_by_genre_button" type="submit">↵</button>
+            </input>
+        </div>
+        <div>
+            <input 
+                id="search_by_words_input" 
+                class="search_by_words" 
+                placeholder="Пошук музики за словами в ній"
+            >
+                <button id="search_by_words_button" type="submit">↵</button>
+            </input>
+        </div>
+    </div>
+
+    <div id="music_table" class="music_table">
+        <div>
+            <div class="id">№</div>
+            <div class="name">Назва</div>
+            <div class="creator">Виконавець</div>
+            <div class="genre">Жанри</div>
+            <div class="count_listener">К-сть слухачів</div>
+        </div>
+    </div>
+</body>
+
+<script src="./js/code.js"></script>
+
+</html>
